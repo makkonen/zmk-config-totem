@@ -81,6 +81,22 @@
             tapping-term-ms = <220>;
             flavor = "tap-preferred";
         };
+
+        comma_morph: comma_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_MORPH";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_morph: dot_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_MORPH";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -152,7 +168,7 @@
             bindings = <
          &kp B      &kp L      &kp D      &kp W      &kp Z         &kp J      &kp F      &kp O      &kp U      &kp APOS
          &kp N      &kp R      &kp T      &kp S      &kp G         &kp Y      &kp H      &kp A      &kp E      &kp I
-&kp ESC  &qu_or Q 0 &kp X      &kp M      &kp C      &kp V         &kp K      &kp P      &kp COMMA  &kp DOT    &kp FSLH   &kp RET
+&kp ESC  &qu_or Q 0 &kp X      &kp M      &kp C      &kp V         &kp K      &kp P      &comma_morph &dot_morph &kp FSLH   &kp RET
                               &kp DEL    &lt NAV TAB &kp SPACE    &osmlt SYM RSHFT &lt NUM ESC &lt MOUSE BSPC
             >;
         };
