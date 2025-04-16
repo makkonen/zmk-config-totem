@@ -372,7 +372,7 @@
 
         Combo_Delete {
             bindings = <&kp DELETE>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
         };
 
         Combo_Dash {
@@ -380,14 +380,9 @@
             key-positions = <16 17>;
         };
 
-        Combo_Semicolon {
-            bindings = <&kp SEMI>;
-            key-positions = <17 18>;
-        };
-
         Combo_Thanks {
             bindings = <&thanks>;
-            key-positions = <11 12 13 14>;
+            key-positions = <11 12 13 10>;
         };
     };
 
