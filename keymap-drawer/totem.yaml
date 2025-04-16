@@ -288,3 +288,4 @@ combos:
   k: {t: '-', s: _}
 - p: [11, 12, 13, 10]
   k: '&thanks'
+  l: [BASE]
