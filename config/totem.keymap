@@ -383,6 +383,7 @@
         Combo_Thanks {
             bindings = <&thanks>;
             key-positions = <11 12 13 10>;
+            layers = <0>;
         };
     };
 
