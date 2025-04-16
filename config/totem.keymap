@@ -250,16 +250,10 @@
             label = "macro_thanks";
         };
 
-                efore: efore {
+        efore: efore {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp E &kp F &kp O &kp R &kp E>;
-        };
-
-        qu: qu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Q &kp U>;
         };
 
         nd: nd {
