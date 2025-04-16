@@ -276,9 +276,9 @@ layers:
 combos:
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
-- p: [22, 23]
-  k: Ctl+C
 - p: [23, 24]
+  k: Ctl+C
+- p: [24, 25]
   k: Ctl+V
 - p: [13, 14]
   k: {t: '$$mdi:backspace$$', type: backspace}
@@ -289,3 +289,7 @@ combos:
 - p: [11, 12, 13, 10]
   k: '&thanks'
   l: [BASE]
+- p: [22, 23]
+  k: Ctl+X
+- p: [21, 22]
+  k: Ctl+Z
