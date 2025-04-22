@@ -280,12 +280,10 @@ combos:
   k: Ctl+C
 - p: [24, 25]
   k: Ctl+V
-- p: [13, 14]
+- p: [18, 19]
   k: {t: '$$mdi:backspace$$', type: backspace}
-- p: [15, 16]
+- p: [9, 8]
   k: $$mdi:backspace-reverse-outline$$
-- p: [16, 17]
-  k: {t: '-', s: _}
 - p: [11, 12, 13, 10]
   k: '&thanks'
   l: [BASE]
