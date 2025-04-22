@@ -367,17 +367,12 @@
 
         Combo_Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <13 14>;
+            key-positions = <18 19>;
         };
 
         Combo_Delete {
             bindings = <&kp DELETE>;
-            key-positions = <15 16>;
-        };
-
-        Combo_Dash {
-            bindings = <&kp MINUS>;
-            key-positions = <16 17>;
+            key-positions = <9 8>;
         };
 
         Combo_Thanks {
