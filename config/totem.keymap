@@ -401,6 +401,11 @@
             bindings = <&kp LC(Z)>;
             key-positions = <21 22>;
         };
+
+        Combo_Enter {
+            bindings = <&none>;
+            key-positions = <17 18>;
+        };
     };
 
     keymap {
