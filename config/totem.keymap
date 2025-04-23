@@ -127,14 +127,9 @@
             bindings = <&mo 1>;
 
             repeat {
-                trigger-keys = <L D Z N R T S G M C V>;
+                trigger-keys = <B L D Z N R T S G M C V>;
                 bindings = <&key_repeat>;
                 strict-modifiers;
-            };
-
-            arcl_b {
-                trigger-keys = <B>;
-                bindings = <&efore>;
             };
 
             arcl_f {
@@ -205,14 +200,9 @@
                 bindings = <&org>;
             };
 
-            arcr_n {
-                trigger-keys = <N>;
+            arcr_nt {
+                trigger-keys = <N T>;
                 bindings = <&ion>;
-            };
-
-            arcr_t {
-                trigger-keys = <T>;
-                bindings = <&he>;
             };
 
             arcr_i {
@@ -257,12 +247,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp H &kp A &kp N &kp K &kp S &kp EXCL>;
             label = "macro_thanks";
-        };
-
-        efore: efore {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp F &kp O &kp R &kp E>;
         };
 
         nd: nd {
