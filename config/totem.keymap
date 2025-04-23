@@ -416,9 +416,9 @@
         nav_layer {
             label = "NAV";
             bindings = <
-        &none      LS(TAB)    &swapper    &none       &none        &kp CAPS  &kp HOME     &kp UP    &kp END    &kp PG_UP
-        &osm LGUI  &osm LALT  &osm LCTRL  &osm LSHFT  &kp LGUI     &none     &kp LEFT     &kp DOWN  &kp RIGHT  &kp PG_DN
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp LC(Y)    &kp INS   &kp LS(TAB)  &kp DEL   &kp TAB    &none      &trans
+        &none      &kp LS(TAB)  &swapper    &none       &none        &kp CAPS  &kp HOME     &kp UP    &kp END    &kp PG_UP
+        &osm LGUI  &osm LALT    &osm LCTRL  &osm LSHFT  &kp LGUI     &none     &kp LEFT     &kp DOWN  &kp RIGHT  &kp PG_DN
+&trans  &kp LC(Z)  &kp LC(X)    &kp LC(C)   &kp LC(V)   &kp LC(Y)    &kp INS   &kp LS(TAB)  &kp DEL   &kp TAB    &none      &trans
                               &trans      &trans      &kp SPACE    &kp BSPC  &kp DEL      &trans
             >;
         };
