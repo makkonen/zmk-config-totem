@@ -205,9 +205,14 @@
                 bindings = <&org>;
             };
 
-            arcr_nt {
-                trigger-keys = <N T>;
+            arcr_n {
+                trigger-keys = <N>;
                 bindings = <&ion>;
+            };
+
+            arcr_t {
+                trigger-keys = <T>;
+                bindings = <&he>;
             };
 
             arcr_i {
@@ -294,6 +299,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp O &kp U &kp L &kp D>;
+        };
+
+        he: he {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp E>;
         };
 
         ion: ion {
