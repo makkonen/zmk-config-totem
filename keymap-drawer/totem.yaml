@@ -184,7 +184,7 @@ layers:
   - F3
   - PAUSE BREAK
   - $$mdi:brightness-7$$
-  - MUTE
+  - $$mdi:volume-off$$
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - $$mdi:brightness-5$$
