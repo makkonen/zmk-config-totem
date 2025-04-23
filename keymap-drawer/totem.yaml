@@ -291,3 +291,5 @@ combos:
   k: Ctl+X
 - p: [21, 22]
   k: Ctl+Z
+- p: [17, 18]
+  k: {t: '$$mdi:minus-circle-outline$$', type: none}
