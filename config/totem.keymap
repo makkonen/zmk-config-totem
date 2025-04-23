@@ -68,7 +68,7 @@
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <2 3>;
+            ignored-key-positions = <2 1>;
         };
 
         osmlt: osm_layer_tap {
@@ -395,7 +395,7 @@
         };
 
         Combo_Enter {
-            bindings = <&none>;
+            bindings = <&kp RET>;
             key-positions = <17 18>;
         };
     };
