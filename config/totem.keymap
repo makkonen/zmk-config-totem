@@ -451,7 +451,7 @@
             bindings = <
         &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN          &none                 &none             &none         &none              &none
         &kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK           &none                 &kp LG(LC(LEFT))  &kp RG(TAB)   &kp LC(LG(RIGHT))  &none
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &kp C_BRIGHTNESS_DEC  &kp K_MUTE        &kp C_VOL_DN  &kp C_VOL_UP       &kp C_BRIGHTNESS_INC  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &kp C_BRIGHTNESS_DEC  &kp C_MUTE        &kp C_VOL_DN  &kp C_VOL_UP       &kp C_BRIGHTNESS_INC  &trans
                          &trans  &trans  &trans             &trans                &trans            &trans
             >;
         };
