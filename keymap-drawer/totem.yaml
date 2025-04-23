@@ -292,4 +292,4 @@ combos:
 - p: [21, 22]
   k: Ctl+Z
 - p: [17, 18]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
