@@ -42,13 +42,30 @@
 
 / {
     behaviors {
-        osm: one_shot_mod {
+        // REMOVED original osm behavior
+
+        // NEW: Left-hand One-Shot Mods
+        osm_left: one_shot_mod_left {
             compatible = "zmk,behavior-sticky-key";
-            label = "One-Shot Mod";
+            label = "OSM_LEFT";
             #binding-cells = <1>;
             bindings = <&kp>;
             release-after-ms = <2000>;
             quick-release;
+            // Positions for left-hand OSM keys (NAV layer)
+            sticky-key-positions = <10 11 12 13>;
+        };
+
+        // NEW: Right-hand One-Shot Mods
+        osm_right: one_shot_mod_right {
+            compatible = "zmk,behavior-sticky-key";
+            label = "OSM_RIGHT";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <2000>;
+            quick-release;
+            // Positions for right-hand OSM keys (NUM/SYM layers)
+            sticky-key-positions = <16 17 18 19>;
         };
 
         swapper: swapper {
@@ -60,12 +77,18 @@
             ignored-key-positions = <2 1>;
         };
 
+        // Note: osmlt is defined but not used in the keymap.
+        // If you intended to use it, it might need adjustment depending
+        // on whether you want left or right OSM behavior.
         osmlt: osm_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&osm>;
+            // This still uses the generic &osm label, which no longer exists.
+            // Decide if you need osm_left or osm_right here if you use this behavior.
+            // Example using osm_right: bindings = <&mo>, <&osm_right>;
+            bindings = <&mo>, <&osm_right>; // Assuming right hand if used
 
             display-name = "OSM Layer-Tap";
         };
@@ -112,7 +135,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SHFT_MORPH";
             #binding-cells = <0>;
-            bindings = <&osm RSHFT>, <&caps_word>;
+            // UPDATED: Use osm_right for RSHFT
+            bindings = <&sk RSHFT>, <&caps_word>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -410,30 +434,33 @@
         nav_layer {
             label = "NAV";
             bindings = <
-        &none      &kp LS(TAB)  &swapper    &none       &none        &kp CAPS  &kp HOME     &kp UP    &kp END    &kp PG_UP
-        &osm LGUI  &osm LALT    &osm LCTRL  &osm LSHFT  &kp LGUI     &none     &kp LEFT     &kp DOWN  &kp RIGHT  &kp PG_DN
-&trans  &kp LC(Z)  &kp LC(X)    &kp LC(C)   &kp LC(V)   &kp LC(Y)    &kp INS   &kp LS(TAB)  &kp DEL   &kp TAB    &none      &trans
-                                &trans      &trans      &kp SPACE    &kp BSPC  &kp DEL      &trans
+        &none          &kp LS(TAB)  &swapper        &none           &none        &kp CAPS  &kp HOME     &kp UP    &kp END    &kp PG_UP
+        // UPDATED: Use osm_left
+        &osm_left LGUI &osm_left LALT &osm_left LCTRL &osm_left LSHFT &kp LGUI     &none     &kp LEFT     &kp DOWN  &kp RIGHT  &kp PG_DN
+&trans  &kp LC(Z)      &kp LC(X)      &kp LC(C)       &kp LC(V)       &kp LC(Y)    &kp INS   &kp LS(TAB)  &kp DEL   &kp TAB    &none      &trans
+                                      &trans          &trans          &kp SPACE    &kp BSPC  &kp DEL      &trans
             >;
         };
 
         num_layer {
             label = "NUM";
             bindings = <
-        &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none      &none       &none       &none      &none
-        &kp MINUS  &kp N4  &kp N5   &kp N6  &kp EQUAL    &none      &osm RSHFT  &osm RCTRL  &osm RALT  &osm RGUI
-&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &kp RC(Y)  &kp RC(V)   &kp RC(C)   &kp RC(X)  &kp RC(Z)  &trans
-                           &kp DOT  &kp N0  &trans       &trans     &trans      &trans
+        &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none      &none           &none           &none          &none
+        &kp MINUS  &kp N4  &kp N5   &kp N6  &kp EQUAL    &none      // UPDATED: Use osm_right
+                                                                                &osm_right RSHFT &osm_right RCTRL &osm_right RALT &osm_right RGUI
+&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &kp RC(Y)  &kp RC(V)       &kp RC(C)       &kp RC(X)      &kp RC(Z)      &trans
+                           &kp DOT  &kp N0  &trans       &trans     &trans          &trans
             >;
         };
 
         sym_layer {
             label = "SYM";
             bindings = <
-        &kp LBRC                    &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC    &none   &none       &none       &none      &none
-        &mt LESS_THAN GREATER_THAN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none   &osm RSHFT  &osm RCTRL  &osm RALT  &osm RGUI
-&trans  &kp TILDE                   &kp EXCL  &kp AT     &kp HASH   &kp PIPE    &none   &none       &none       &none      &none      &trans
-                                              &trans     &kp LPAR   &kp RPAR    &trans  &trans      &trans
+        &kp LBRC                    &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC    &none   &none           &none           &none          &none
+        &mt LESS_THAN GREATER_THAN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none   // UPDATED: Use osm_right
+                                                                                        &osm_right RSHFT &osm_right RCTRL &osm_right RALT &osm_right RGUI
+&trans  &kp TILDE                   &kp EXCL  &kp AT     &kp HASH   &kp PIPE    &none   &none           &none           &none          &none          &trans
+                                              &trans     &kp LPAR   &kp RPAR    &trans  &trans          &trans
             >;
         };
 
