@@ -68,6 +68,7 @@
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+
             ignored-key-positions = <2 1>;
         };
 
@@ -419,7 +420,7 @@
         &none      &kp LS(TAB)  &swapper    &none       &none        &kp CAPS  &kp HOME     &kp UP    &kp END    &kp PG_UP
         &osm LGUI  &osm LALT    &osm LCTRL  &osm LSHFT  &kp LGUI     &none     &kp LEFT     &kp DOWN  &kp RIGHT  &kp PG_DN
 &trans  &kp LC(Z)  &kp LC(X)    &kp LC(C)   &kp LC(V)   &kp LC(Y)    &kp INS   &kp LS(TAB)  &kp DEL   &kp TAB    &none      &trans
-                              &trans      &trans      &kp SPACE    &kp BSPC  &kp DEL      &trans
+                                &trans      &trans      &kp SPACE    &kp BSPC  &kp DEL      &trans
             >;
         };
 
@@ -436,10 +437,10 @@
         sym_layer {
             label = "SYM";
             bindings = <
-        &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC    &none   &none       &none       &none      &none
-        &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none   &osm RSHFT  &osm RCTRL  &osm RALT  &osm RGUI
-&trans  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE    &none   &none       &none       &none      &none      &trans
-                             &trans     &kp LPAR   &kp RPAR    &trans  &trans      &trans
+        &kp LBRC                    &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC    &none   &none       &none       &none      &none
+        &mt LESS_THAN GREATER_THAN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none   &osm RSHFT  &osm RCTRL  &osm RALT  &osm RGUI
+&trans  &kp TILDE                   &kp EXCL  &kp AT     &kp HASH   &kp PIPE    &none   &none       &none       &none      &none      &trans
+                                              &trans     &kp LPAR   &kp RPAR    &trans  &trans      &trans
             >;
         };
 
