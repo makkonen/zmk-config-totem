@@ -141,8 +141,8 @@
                 strict-modifiers;
             };
 
-            arcl_f {
-                trigger-keys = <F>;
+            arcl_fh {
+                trigger-keys = <F H>;
                 bindings = <&kp Y>;
             };
 
@@ -159,6 +159,11 @@
             arcl_period {
                 trigger-keys = <DOT>;
                 bindings = <&com>;
+            };
+
+            arcl_i {
+                trigger-keys = <I>;
+                bindings = <&mc_on>;
             };
 
             arcl_a {
