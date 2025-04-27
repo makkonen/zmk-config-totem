@@ -49,6 +49,7 @@
             bindings = <&kp>;
             release-after-ms = <2000>;
             quick-release;
+            ignore-modifiers;
         };
 
         swapper: swapper {
@@ -235,6 +236,64 @@
             #binding-cells = <2>;
             tapping-term-ms = <185>;
         };
+
+        parens_ht: parens_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PARENS_HT";
+            bindings = <&macro_parens>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        braces_ht: braces_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BRACES_HT";
+            bindings = <&macro_braces>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        brackets_ht: brackets_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BRACKETS_HT";
+            bindings = <&macro_brackets>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        gt_lt_ht: gt_lt_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GT_LT_HT";
+            bindings = <&macro_greater_less>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        excl_morph: excl_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EXCL_MORPH";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL>, <&kp QUESTION>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        swapper_ctrl: swapper_ctrl {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_CTRL";
+            #binding-cells = <0>;
+            bindings = <&kt LCTL>, <&kp TAB>, <&kt LCTL>;
+
+            ignored-key-positions = <2 1>;
+        };
     };
 
     macros {
@@ -340,6 +399,34 @@
             #binding-cells = <0>;
             bindings = <&kp O &kp R &kp G>;
         };
+
+        macro_greater_less: macro_greater_less {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp GT &kp LEFT>;
+            label = "MACRO_GREATER_LESS";
+        };
+
+        macro_brackets: macro_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "MACRO_BRACKETS";
+        };
+
+        macro_braces: macro_braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "MACRO_BRACES";
+        };
+
+        macro_parens: macro_parens {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "MACRO_PARENS";
+        };
     };
 
     combos {
@@ -392,6 +479,11 @@
             bindings = <&kp RET>;
             key-positions = <17 18>;
         };
+
+        Combo_Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <10 11>;
+        };
     };
 
     keymap {
@@ -402,7 +494,7 @@
             bindings = <
          &kp B       &kp L  &kp D         &kp W        &kp Z          &kp J          &kp F        &kp O         &kp U       &kp APOS
          &kp N       &kp R  &kp T         &kp S        &kp G          &kp Y          &kp H        &kp A         &kp E       &kp I
-&kp ESC  &qu_or Q 0  &kp X  &kp M         &kp C        &kp V          &kp K          &kp P        &comma_morph  &dot_morph  &kp FSLH  &kp RET
+&kp ESC  &qu_or Q 0  &kp X  &kp M         &kp C        &kp V          &kp K          &kp P        &comma_morph  &dot_morph  &excl_morph  &kp RET
                             &lt 6 DELETE  &arcl NAV 0  &lt 5 SPACE    &shftlt SYM 0  &arcr NUM 0  &lt 4 BSPC
             >;
         };
@@ -412,28 +504,28 @@
             bindings = <
         &none      &kp LS(TAB)  &swapper    &none       &none        &kp CAPS      &kp HOME     &kp UP    &kp END    &kp PG_UP
         &osm LGUI  &osm LALT    &osm LCTRL  &osm LSHFT  &kp LGUI     &kp K_CANCEL  &kp LEFT     &kp DOWN  &kp RIGHT  &kp PG_DN
-&trans  &kp LC(Z)  &kp LC(X)    &kp LC(C)   &kp LC(V)   &kp LC(Y)    &kp INS       &kp LS(TAB)  &kp DEL   &kp TAB    &none      &trans
-                                &trans      &trans      &kp SPACE    &kp BSPC      &kp DEL      &trans
+&trans  &kp LC(Z)  &kp LC(X)    &kp LC(C)   &kp LC(V)   &kp LC(Y)    &kp INS       &kp LS(TAB)  &kp DEL   &kp TAB    &kp BACKSPACE  &trans
+                                &trans      &trans      &trans       &trans        &trans       &trans
             >;
         };
 
         num_layer {
             label = "NUM";
             bindings = <
-        &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none      &none       &none       &none      &none
-        &kp MINUS  &kp N4  &kp N5   &kp N6  &kp EQUAL    &none      &osm RSHFT  &osm RCTRL  &osm RALT  &osm RGUI
-&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &kp RC(Y)  &kp RC(V)   &kp RC(C)   &kp RC(X)  &kp RC(Z)  &trans
-                           &kp DOT  &kp N0  &trans       &trans     &trans      &trans
+        &kp LBKT   &kp N7  &kp N8   &kp N9    &kp RBKT     &none      &none       &none       &none      &none
+        &kp MINUS  &kp N4  &kp N5   &kp N6    &kp EQUAL    &none      &osm RSHFT  &osm RCTRL  &osm RALT  &osm RGUI
+&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3    &kp BSLH     &kp RC(Y)  &kp RC(V)   &kp RC(C)   &kp RC(X)  &kp RC(Z)  &trans
+                           &kp DOT  &lt 1 N0  &trans       &trans     &trans      &trans
             >;
         };
 
         sym_layer {
             label = "SYM";
             bindings = <
-        &kp LBRC                    &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC    &none   &none       &none       &none      &none
-        &mt LESS_THAN GREATER_THAN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none   &osm RSHFT  &osm RCTRL  &osm RALT  &osm RGUI
-&trans  &kp TILDE                   &kp EXCL  &kp AT     &kp HASH   &kp PIPE    &none   &none       &none       &none      &none      &trans
-                                              &trans     &kp LPAR   &kp RPAR    &trans  &trans      &trans
+        &gt_lt_ht 0 LESS_THAN  &braces_ht 0 LEFT_BRACE  &brackets_ht 0 LEFT_BRACKET  &parens_ht 0 LEFT_PARENTHESIS  &kp RBRC    &none   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN
+        &kp AMPS               &kp SLASH                &kp MINUS                    &kp AT                         &kp PLUS    &none   &osm RSHFT             &osm RCTRL         &osm RALT        &osm RGUI
+&trans  &kp TILDE              &kp EXCL                 &kp ASTRK                    &kp HASH                       &kp PIPE    &none   &none                  &none              &none            &none             &trans
+                                                        &trans                       &kp LPAR                       &kp RPAR    &trans  &trans                 &trans
             >;
         };
 
@@ -450,10 +542,10 @@
         media_layer {
             label = "MEDIA";
             bindings = <
-        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none       &kp C_VOL_UP  &none       &none
-        &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &bootloader   &sys_reset      &none  &kp C_PREV  &kp C_VOL_DN  &kp C_NEXT  &none
-&trans  &none         &bt BT_PRV    &bt BT_NXT    &none         &none           &none  &none       &kp C_PP      &kp C_MUTE  &none  &trans
-                                    &none         &none         &none           &none  &kp C_STOP  &none
+        &none  &kp LS(LC(TAB))  &swapper_ctrl  &none        &none         &none  &kp RA(LEFT)  &none             &kp RA(RIGHT)  &none
+        &none  &none            &none          &bootloader  &sys_reset    &none  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT     &none
+&trans  &none  &none            &none          &none        &none         &none  &kp RC(LEFT)  &kp C_STOP        &kp RC(RIGHT)  &none  &trans
+                                &none          &none        &none         &none  &none         &none
             >;
         };
 
@@ -465,6 +557,25 @@
 &trans  &none  &none     &none         &none      &none     &none      &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none  &trans
                          &trans        &trans     &trans    &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
+        };
+
+        Internals_layer {
+            label = "INTERNAL";
+            bindings = <
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none       &none        &none  &none  &none
+        &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &bootloader   &sys_reset      &sys_reset  &bootloader  &none  &none  &none
+&trans  &none         &bt BT_PRV    &bt BT_NXT    &none         &none           &none       &none        &none  &none  &none  &trans
+                                    &none         &none         &none           &none       &none        &none
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        INTERNALS {
+            if-layers = <1 2>;
+            then-layer = <7>;
         };
     };
 };
