@@ -40,6 +40,8 @@
     tapping-term-ms = <170>;
 };
 
+&lt { quick-tap-ms = <100>; };
+
 / {
     behaviors {
         osm: one_shot_mod {
