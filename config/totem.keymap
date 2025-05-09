@@ -544,20 +544,20 @@
         media_layer {
             label = "MEDIA";
             bindings = <
-        &none  &kp LS(LC(TAB))  &swapper_ctrl  &none        &none         &none  &kp RA(LEFT)  &none             &kp RA(RIGHT)  &none
-        &none  &none            &none          &bootloader  &sys_reset    &none  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT     &none
-&trans  &none  &none            &none          &none        &none         &none  &kp RC(LEFT)  &kp C_STOP        &kp RC(RIGHT)  &none  &trans
-                                &none          &none        &none         &none  &none         &none
+        &none  &kp LS(LC(TAB))  &swapper_ctrl  &none  &none    &none  &kp RA(LEFT)  &none             &kp RA(RIGHT)  &none
+        &none  &none            &none          &none  &none    &none  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT     &none
+&trans  &none  &none            &none          &none  &none    &none  &kp RC(LEFT)  &kp C_STOP        &kp RC(RIGHT)  &none  &trans
+                                &none          &none  &none    &none  &none         &none
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-        &none  &none     &kp UP_ARROW  &none      &none     &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
-        &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&trans  &none  &none     &none         &none      &none     &none      &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none  &trans
-                         &trans        &trans     &trans    &mkp LCLK  &mkp RCLK       &mkp MCLK
+        &none  &mkp MCLK  &kp UP_ARROW  &mkp RCLK  &none     &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
+        &none  &kp LEFT   &kp DOWN      &kp RIGHT  &none     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&trans  &none  &none      &none         &none      &none     &none      &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none  &trans
+                          &trans        &trans     &trans    &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
         };
 
