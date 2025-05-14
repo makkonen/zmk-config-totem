@@ -296,6 +296,87 @@
 
             ignored-key-positions = <2 1>;
         };
+
+        swapper_win1: swapper_win1 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN1";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&kp 1>, <&kt LWIN>;
+
+            ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
+        };
+
+        swapper_win2: swapper_win2 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN2";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&kp 2>, <&kt LWIN>;
+
+            ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
+        };
+
+        swapper_win3: swapper_win3 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN3";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&kp 3>, <&kt LWIN>;
+
+            ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
+        };
+
+        swapper_win4: swapper_win4 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN4";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&kp 4>, <&kt LWIN>;
+
+            ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
+        };
+
+        swapper_win5: swapper_win5 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN5";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&kp 5>, <&kt LWIN>;
+
+            ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
+        };
+
+        swapper_win6: swapper_win6 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN6";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&kp 6>, <&kt LWIN>;
+
+            ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
+        };
+
+        swapper_win7: swapper_win7 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN7";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&kp 7>, <&kt LWIN>;
+
+            ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
+        };
+
+        swapper_win8: swapper_win8 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN8";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&kp 8>, <&kt LWIN>;
+
+            ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
+        };
+
+        swapper_win9: swapper_win9 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN9";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&kp 9>, <&kt LWIN>;
+
+            ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
+        };
     };
 
     macros {
@@ -573,10 +654,10 @@
 
         Windows_layer {
             bindings = <
-        &trans            &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans               &trans  &trans  &trans  &trans  &trans
-        &kp LG(LC(LEFT))  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp LC(LG(RIGHT))    &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans               &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans      &trans      &trans               &trans  &trans  &trans
+        &trans            &swapper_win7  &swapper_win8  &swapper_win9  &trans               &trans  &trans  &trans  &trans  &trans
+        &kp LG(LC(LEFT))  &swapper_win4  &swapper_win5  &swapper_win6  &kp LC(LG(RIGHT))    &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &swapper_win1  &swapper_win2  &swapper_win3  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans         &trans         &trans               &trans  &trans  &trans
             >;
         };
     };
