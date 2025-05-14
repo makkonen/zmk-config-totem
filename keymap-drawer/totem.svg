@@ -2280,20 +2280,17 @@ rect.held, rect.combo.held {
 <g transform="translate(144, 62) rotate(-4.0)" class="key keypos-1">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Gui+7</text>
-<text x="0" y="-24" class="key shifted">Gui+&amp;</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;swapper_…</tspan></text>
 </g>
 <g transform="translate(212, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Gui+8</text>
-<text x="0" y="-24" class="key shifted">Gui+*</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;swapper_…</tspan></text>
 </g>
 <g transform="translate(271, 56)" class="key keypos-3">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Gui+9</text>
-<text x="0" y="-24" class="key shifted">Gui+(</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;swapper_…</tspan></text>
 </g>
 <g transform="translate(330, 65)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans side"/>
@@ -2333,20 +2330,17 @@ rect.held, rect.combo.held {
 <g transform="translate(148, 118) rotate(-4.0)" class="key keypos-11">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Gui+4</text>
-<text x="0" y="-24" class="key shifted">Gui+$</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;swapper_…</tspan></text>
 </g>
 <g transform="translate(212, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Gui+5</text>
-<text x="0" y="-24" class="key shifted">Gui+%</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;swapper_…</tspan></text>
 </g>
 <g transform="translate(271, 112)" class="key keypos-13">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Gui+6</text>
-<text x="0" y="-24" class="key shifted">Gui+^</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;swapper_…</tspan></text>
 </g>
 <g transform="translate(330, 121)" class="key keypos-14">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -2391,20 +2385,17 @@ rect.held, rect.combo.held {
 <g transform="translate(152, 174) rotate(-4.0)" class="key keypos-22">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Gui+1</text>
-<text x="0" y="-24" class="key shifted">Gui+!</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;swapper_…</tspan></text>
 </g>
 <g transform="translate(212, 140)" class="key keypos-23">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Gui+2</text>
-<text x="0" y="-24" class="key shifted">Gui+@</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;swapper_…</tspan></text>
 </g>
 <g transform="translate(271, 168)" class="key keypos-24">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Gui+3</text>
-<text x="0" y="-24" class="key shifted">Gui+#</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;swapper_…</tspan></text>
 </g>
 <g transform="translate(330, 177)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans side"/>
