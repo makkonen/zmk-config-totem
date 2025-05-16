@@ -514,7 +514,7 @@
 
     combos {
         compatible = "zmk,combos";
-        timeout-ms = <15>;
+        timeout-ms = <9>;
         require-prior-idle-ms = <150>;
 
         Combo_Tab {
