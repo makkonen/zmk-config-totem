@@ -567,6 +567,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <10 11>;
         };
+
+        Combo_Command {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {

@@ -373,3 +373,5 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
+- p: [34, 35]
+  k: Alt+$$mdi:keyboard-space$$
