@@ -620,10 +620,10 @@
         func_layer {
             label = "FUNC";
             bindings = <
-        &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN          &none                 &none             &none         &none              &none
-        &kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK           &none                 &kp LG(LC(LEFT))  &kp RG(TAB)   &kp LC(LG(RIGHT))  &none
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &kp C_BRIGHTNESS_DEC  &kp C_MUTE        &kp C_VOL_DN  &kp C_VOL_UP       &kp C_BRIGHTNESS_INC  &trans
-                         &trans  &trans  &trans             &trans                &trans            &trans
+        &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN          &kp RG(TAB)             &kp HOME    &kp UP_ARROW    &kp END       &none
+        &kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK           &kp RG(RC(LEFT_ARROW))  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT     &kp RC(RG(RIGHT))
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &kp C_BRIGHTNESS_DEC    &kp C_MUTE  &kp C_VOL_DN    &kp C_VOL_UP  &kp C_BRIGHTNESS_INC  &trans
+                         &trans  &trans  &trans             &trans                  &trans      &trans
             >;
         };
 
@@ -664,6 +664,8 @@
 &trans  &trans            &swapper_win1  &swapper_win2  &swapper_win3  &trans               &trans  &trans  &trans  &trans  &trans  &trans
                                          &trans         &trans         &trans               &trans  &trans  &trans
             >;
+
+            label = "WINDOWS";
         };
     };
 
