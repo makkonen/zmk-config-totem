@@ -162,21 +162,21 @@ layers:
   - F8
   - F9
   - $$mdi:printer-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Gui+$$mdi:keyboard-tab$$
+  - HOME
+  - $$mdi:arrow-up-bold$$
+  - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F11
   - F4
   - F5
   - F6
   - SLCK
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+Ctl+$$mdi:arrow-left-bold$$
-  - Gui+$$mdi:keyboard-tab$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - Ctl+Gui+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - F10
   - F1
@@ -312,7 +312,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  Windows:
+  WINDOWS:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&swapper_win7'
   - '&swapper_win8'
