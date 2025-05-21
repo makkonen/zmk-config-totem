@@ -569,8 +569,13 @@
         };
 
         Combo_Command {
-            bindings = <&kp LA(SPACE)>;
+            bindings = <&kp LA(LG(SPACE))>;
             key-positions = <34 35>;
+        };
+
+        Combo_Quit {
+            bindings = <&kp LA(F4)>;
+            key-positions = <0 1>;
         };
     };
 
