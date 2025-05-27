@@ -375,5 +375,5 @@ combos:
   k: $$mdi:keyboard-esc$$
 - p: [34, 35]
   k: Alt+Gui+$$mdi:keyboard-space$$
-- p: [0, 1]
+- p: [0, 1, 2]
   k: Alt+F4
