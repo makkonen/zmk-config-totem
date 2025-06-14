@@ -577,6 +577,11 @@
             bindings = <&kp LA(F4)>;
             key-positions = <0 1 2>;
         };
+
+        Combo_Hintmode {
+            bindings = <&kp LA(LC(LS(SPACE)))>;
+            key-positions = <33 36>;
+        };
     };
 
     keymap {
