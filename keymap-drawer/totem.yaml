@@ -377,3 +377,5 @@ combos:
   k: Alt+Gui+$$mdi:keyboard-space$$
 - p: [0, 1, 2]
   k: Alt+F4
+- p: [33, 36]
+  k: Meh+$$mdi:keyboard-space$$
