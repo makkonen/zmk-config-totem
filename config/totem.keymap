@@ -582,6 +582,11 @@
             bindings = <&kp LA(LC(LS(SPACE)))>;
             key-positions = <33 36>;
         };
+
+        Combo_PW {
+            bindings = <&kp RS(RA(RC(F6)))>;
+            key-positions = <13 16 17 12>;
+        };
     };
 
     keymap {
