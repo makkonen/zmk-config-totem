@@ -379,3 +379,5 @@ combos:
   k: Alt+F4
 - p: [33, 36]
   k: Meh+$$mdi:keyboard-space$$
+- p: [13, 16, 17, 12]
+  k: Sft+AltGr+Ctl+F6

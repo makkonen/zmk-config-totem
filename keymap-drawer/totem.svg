@@ -611,6 +611,16 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="411" y="232" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="416" y="236" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
+<g class="combo combopos-13">
+<path d="M425,98 l-135,12" class="combo"/>
+<path d="M425,98 l135,12" class="combo"/>
+<path d="M425,98 l194,-13" class="combo"/>
+<path d="M425,98 l-194,-13" class="combo"/>
+<rect rx="6" ry="6" x="411" y="85" width="28" height="26" class="combo"/>
+<text x="425" y="98" class="combo tap">
+<tspan x="425" dy="-0.6em" style="font-size: 60%">Sft+</tspan><tspan x="425" dy="1.2em" style="font-size: 60%">AltGr+Ctl…</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 366)" class="layer-NAV">
@@ -866,6 +876,16 @@ rect.held, rect.combo.held {
 <path d="M425,245 l85,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="232" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="416" y="236" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+</g>
+<g class="combo combopos-12">
+<path d="M425,98 l-135,12" class="combo"/>
+<path d="M425,98 l135,12" class="combo"/>
+<path d="M425,98 l194,-13" class="combo"/>
+<path d="M425,98 l-194,-13" class="combo"/>
+<rect rx="6" ry="6" x="411" y="85" width="28" height="26" class="combo"/>
+<text x="425" y="98" class="combo tap">
+<tspan x="425" dy="-0.6em" style="font-size: 60%">Sft+</tspan><tspan x="425" dy="1.2em" style="font-size: 60%">AltGr+Ctl…</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1138,6 +1158,16 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="411" y="232" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="416" y="236" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
+<g class="combo combopos-12">
+<path d="M425,98 l-135,12" class="combo"/>
+<path d="M425,98 l135,12" class="combo"/>
+<path d="M425,98 l194,-13" class="combo"/>
+<path d="M425,98 l-194,-13" class="combo"/>
+<rect rx="6" ry="6" x="411" y="85" width="28" height="26" class="combo"/>
+<text x="425" y="98" class="combo tap">
+<tspan x="425" dy="-0.6em" style="font-size: 60%">Sft+</tspan><tspan x="425" dy="1.2em" style="font-size: 60%">AltGr+Ctl…</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1097)" class="layer-SYM">
@@ -1398,6 +1428,16 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="411" y="232" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="416" y="236" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
+<g class="combo combopos-12">
+<path d="M425,98 l-135,12" class="combo"/>
+<path d="M425,98 l135,12" class="combo"/>
+<path d="M425,98 l194,-13" class="combo"/>
+<path d="M425,98 l-194,-13" class="combo"/>
+<rect rx="6" ry="6" x="411" y="85" width="28" height="26" class="combo"/>
+<text x="425" y="98" class="combo tap">
+<tspan x="425" dy="-0.6em" style="font-size: 60%">Sft+</tspan><tspan x="425" dy="1.2em" style="font-size: 60%">AltGr+Ctl…</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1462)" class="layer-FUNC">
@@ -1647,6 +1687,16 @@ rect.held, rect.combo.held {
 <path d="M425,245 l85,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="232" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="416" y="236" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+</g>
+<g class="combo combopos-12">
+<path d="M425,98 l-135,12" class="combo"/>
+<path d="M425,98 l135,12" class="combo"/>
+<path d="M425,98 l194,-13" class="combo"/>
+<path d="M425,98 l-194,-13" class="combo"/>
+<rect rx="6" ry="6" x="411" y="85" width="28" height="26" class="combo"/>
+<text x="425" y="98" class="combo tap">
+<tspan x="425" dy="-0.6em" style="font-size: 60%">Sft+</tspan><tspan x="425" dy="1.2em" style="font-size: 60%">AltGr+Ctl…</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1899,6 +1949,16 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="411" y="232" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="416" y="236" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
+<g class="combo combopos-12">
+<path d="M425,98 l-135,12" class="combo"/>
+<path d="M425,98 l135,12" class="combo"/>
+<path d="M425,98 l194,-13" class="combo"/>
+<path d="M425,98 l-194,-13" class="combo"/>
+<rect rx="6" ry="6" x="411" y="85" width="28" height="26" class="combo"/>
+<text x="425" y="98" class="combo tap">
+<tspan x="425" dy="-0.6em" style="font-size: 60%">Sft+</tspan><tspan x="425" dy="1.2em" style="font-size: 60%">AltGr+Ctl…</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2193)" class="layer-MOUSE">
@@ -2150,6 +2210,16 @@ rect.held, rect.combo.held {
 <path d="M425,245 l85,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="232" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="416" y="236" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+</g>
+<g class="combo combopos-12">
+<path d="M425,98 l-135,12" class="combo"/>
+<path d="M425,98 l135,12" class="combo"/>
+<path d="M425,98 l194,-13" class="combo"/>
+<path d="M425,98 l-194,-13" class="combo"/>
+<rect rx="6" ry="6" x="411" y="85" width="28" height="26" class="combo"/>
+<text x="425" y="98" class="combo tap">
+<tspan x="425" dy="-0.6em" style="font-size: 60%">Sft+</tspan><tspan x="425" dy="1.2em" style="font-size: 60%">AltGr+Ctl…</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2411,6 +2481,16 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="411" y="232" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="416" y="236" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
+<g class="combo combopos-12">
+<path d="M425,98 l-135,12" class="combo"/>
+<path d="M425,98 l135,12" class="combo"/>
+<path d="M425,98 l194,-13" class="combo"/>
+<path d="M425,98 l-194,-13" class="combo"/>
+<rect rx="6" ry="6" x="411" y="85" width="28" height="26" class="combo"/>
+<text x="425" y="98" class="combo tap">
+<tspan x="425" dy="-0.6em" style="font-size: 60%">Sft+</tspan><tspan x="425" dy="1.2em" style="font-size: 60%">AltGr+Ctl…</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2924)" class="layer-WINDOWS">
@@ -2657,6 +2737,16 @@ rect.held, rect.combo.held {
 <path d="M425,245 l85,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="232" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="416" y="236" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+</g>
+<g class="combo combopos-12">
+<path d="M425,98 l-135,12" class="combo"/>
+<path d="M425,98 l135,12" class="combo"/>
+<path d="M425,98 l194,-13" class="combo"/>
+<path d="M425,98 l-194,-13" class="combo"/>
+<rect rx="6" ry="6" x="411" y="85" width="28" height="26" class="combo"/>
+<text x="425" y="98" class="combo tap">
+<tspan x="425" dy="-0.6em" style="font-size: 60%">Sft+</tspan><tspan x="425" dy="1.2em" style="font-size: 60%">AltGr+Ctl…</tspan>
+</text>
 </g>
 </g>
 </g>
