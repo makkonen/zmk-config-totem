@@ -40,7 +40,11 @@
     tapping-term-ms = <170>;
 };
 
-&lt { quick-tap-ms = <100>; };
+&lt {
+    quick-tap-ms = <100>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <170>;
+};
 
 / {
     behaviors {
@@ -383,6 +387,8 @@
         qu: qu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp Q &kp U>;
         };
 
@@ -396,90 +402,120 @@
         nd: nd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp N &kp D>;
         };
 
         hat: hat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp H &kp A &kp T>;
         };
 
         mc_on: mc_on {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp O &kp N>;
         };
 
         spc_and: spc_and {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp SPACE &kp A &kp N &kp D>;
         };
 
         com: com {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp C &kp O &kp M>;
         };
 
         ould: ould {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp O &kp U &kp L &kp D>;
         };
 
         he: he {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp H &kp E>;
         };
 
         ion: ion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp I &kp O &kp N>;
         };
 
         ent: ent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp E &kp N &kp T>;
         };
 
         ng: ng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp N &kp G>;
         };
 
         ou: ou {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp O &kp U>;
         };
 
         ecause: ecause {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp E &kp C &kp A &kp U &kp S &kp E>;
         };
 
         hich: hich {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp H &kp I &kp C &kp H>;
         };
 
         spc_but: spc_but {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp SPACE &kp B &kp U &kp T>;
         };
 
         org: org {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <10>;
             bindings = <&kp O &kp R &kp G>;
         };
 
@@ -520,26 +556,31 @@
         Combo_Tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+            require-prior-idle-ms = <100>;
         };
 
         Combo_Copy {
             bindings = <&kp LC(C)>;
             key-positions = <23 24>;
+            require-prior-idle-ms = <150>;
         };
 
         Combo_Paste {
             bindings = <&kp LC(V)>;
             key-positions = <24 25>;
+            require-prior-idle-ms = <150>;
         };
 
         Combo_Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <18 19>;
+            require-prior-idle-ms = <150>;
         };
 
         Combo_Delete {
             bindings = <&kp DELETE>;
             key-positions = <9 8>;
+            require-prior-idle-ms = <150>;
         };
 
         Combo_Thanks {
@@ -551,11 +592,13 @@
         Combo_Cut {
             bindings = <&kp LC(X)>;
             key-positions = <22 23>;
+            require-prior-idle-ms = <150>;
         };
 
         Combo_Undo {
             bindings = <&kp LC(Z)>;
             key-positions = <21 22>;
+            require-prior-idle-ms = <150>;
         };
 
         Combo_Enter {
@@ -566,6 +609,7 @@
         Combo_Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <10 11>;
+            require-prior-idle-ms = <150>;
         };
 
         Combo_Command {
