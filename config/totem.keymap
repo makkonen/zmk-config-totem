@@ -381,6 +381,16 @@
 
             ignored-key-positions = <1 2 3 12 13 14 23 24 25>;
         };
+
+        rlt: repeatable_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RLT";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     macros {
@@ -642,7 +652,7 @@
          &kp B       &kp L  &kp D         &kp W        &kp Z          &kp J          &kp F        &kp O         &kp U       &kp APOS
          &kp N       &kp R  &kp T         &kp S        &kp G          &kp Y          &kp H        &kp A         &kp E       &kp I
 &kp ESC  &qu_or Q 0  &kp X  &kp M         &kp C        &kp V          &kp K          &kp P        &comma_morph  &dot_morph  &excl_morph  &kp RET
-                            &lt 6 DELETE  &arcl NAV 0  &lt 5 SPACE    &shftlt SYM 0  &arcr NUM 0  &lt 4 BSPC
+                            &rlt 6 DELETE  &arcl NAV 0  &lt 5 SPACE    &shftlt SYM 0  &arcr NUM 0  &rlt 4 BSPC
             >;
         };
 
