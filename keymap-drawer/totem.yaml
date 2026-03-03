@@ -381,3 +381,5 @@ combos:
   k: Meh+$$mdi:keyboard-space$$
 - p: [13, 16, 17, 12]
   k: Sft+AltGr+Ctl+F6
+- p: [27, 28, 29, 30]
+  k: Hyper+F
