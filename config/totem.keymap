@@ -641,6 +641,12 @@
             bindings = <&kp RS(RA(RC(F6)))>;
             key-positions = <13 16 17 12>;
         };
+
+        Combo_HyperF {
+            bindings = <&kp LC(LS(LA(LG(F))))>;
+            key-positions = <27 28 29 30>;
+            slow-release;
+        };
     };
 
     keymap {
