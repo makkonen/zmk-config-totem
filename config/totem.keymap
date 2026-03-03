@@ -34,14 +34,14 @@
 };
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <200>;
     global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
 };
 
 &lt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <200>;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
 };
@@ -72,6 +72,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&mo>, <&osm>;
 
             display-name = "OSM Layer-Tap";
@@ -82,6 +83,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&mo>, <&shft_morph>;
 
             display-name = "Shift Layer-Tap";
@@ -232,6 +234,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <185>;
+            quick-tap-ms = <200>;
         };
 
         arcr: arcane_right {
@@ -241,6 +244,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <185>;
+            quick-tap-ms = <200>;
         };
 
         parens_ht: parens_ht {
@@ -386,9 +390,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "RLT";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
     };
