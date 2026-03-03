@@ -645,7 +645,6 @@
         Combo_HyperF {
             bindings = <&kp LC(LS(LA(LG(F))))>;
             key-positions = <27 28 29 30>;
-            slow-release;
         };
     };
 
