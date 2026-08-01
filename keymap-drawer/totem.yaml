@@ -61,11 +61,11 @@ layers:
   - $$mdi:arrow-right-bold$$
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+Y
+  - '&unmod_ctrl_z'
+  - '&unmod_ctrl_x'
+  - '&unmod_ctrl_c'
+  - '&unmod_ctrl_v'
+  - '&unmod_ctrl_y'
   - INS
   - $$mdi:keyboard-tab-reverse$$
   - $$mdi:backspace-reverse-outline$$
@@ -355,9 +355,9 @@ combos:
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
 - p: [23, 24]
-  k: Ctl+C
+  k: '&unmod_ctrl_c'
 - p: [24, 25]
-  k: Ctl+V
+  k: '&unmod_ctrl_v'
 - p: [18, 19]
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [9, 8]
@@ -366,9 +366,9 @@ combos:
   k: '&thanks'
   l: [BASE]
 - p: [22, 23]
-  k: Ctl+X
+  k: '&unmod_ctrl_x'
 - p: [21, 22]
-  k: Ctl+Z
+  k: '&unmod_ctrl_z'
 - p: [17, 18, 16]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [10, 11]
